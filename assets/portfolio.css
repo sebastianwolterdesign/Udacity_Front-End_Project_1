@@ -1,0 +1,80 @@
+
+/* !!! SECTION PROJECTS & PORTFOLIO CONTENT !!! */
+
+.portfolio_section {
+    margin-top: 10rem;
+}
+
+@media(min-width:700px) {
+
+    .portfolio_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+}
+
+
+@media(min-width:900px) {
+
+    .portfolio_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+}
+
+@media(min-width:1600px) {
+
+    .portfolio_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+}
+
+.portfolio_section_item_image {
+    object-fit: cover;
+    width: 100%;
+    filter: grayscale();
+    filter: opacity(0.3);
+}
+
+.portfolio_section_item_image:hover {
+    filter: none;
+    transition: filter 0.5s ease-in-out;
+}
+
+.portfolio_section_item_text {
+    height: 5rem;
+}
+
+.portfolio_section_item_headline {
+    display: block;
+    text-align: center;
+}
+
+.portfolio_section_item a {
+    text-decoration: none;
+}
+
+.portfolio_section_item_client {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffc20e;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.portfolio_section_item_caption {
+    color: #181818;
+    text-align: center;
+}

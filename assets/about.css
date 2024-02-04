@@ -1,0 +1,37 @@
+/* !!! SECTION ABOUT ME CONTENT !!! */
+
+@media(min-width:900px) {
+
+    .about_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.about_section_item_image {
+    margin-bottom: 5rem;
+    width: 100%
+}
+
+@media(min-width:900px) {
+
+    .about_section_item_image {
+        object-fit: cover;
+    }
+
+}
+
+@media(min-width:1600px) {
+
+    .about_section_item_values {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .about_section_item_values_item h4 {
+        margin-top: 1rem;
+    }
+
+}
